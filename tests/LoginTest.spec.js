@@ -1,6 +1,4 @@
 
-//import { test, expect } from '@playwright/test';
-
 import { test, expect } from '@playwright/test';
 test('LoginTest', async({page})=>{
 await page.goto('https://practicesoftwaretesting.com/');
