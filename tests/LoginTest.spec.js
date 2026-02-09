@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //import{test, expect}from ('@playwright/test');
 //import { test, expect } from '@playwright/test';
 /*test('LoginTest', async({page})=>{
@@ -8,6 +9,21 @@ await page.fill('#loginpassword', 'test@123');
 await page.click('//*[@id="logInModal"]/div/div/div[3]/button[2]');
 await waitForTimeout(3000);
 const nameOfUser = await page.locator('#nameofuser');
+=======
+
+import { test, expect } from '@playwright/test';
+test('LoginTest', async({page})=>{
+await page.goto('https://practicesoftwaretesting.com/');
+await page.click('//*[@id="navbarSupportedContent"]/ul/li[4]/a');
+   await page.locator('#email').fill("gubbalatest100@yahoo.com") ;
+   await page.locator('#password').fill("Passw0rd100#@");
+   await page.click("//input[@value='Login']");
+   await page.waitForTimeout(3000);
+
+   const nameOfUser=await page.locator('#menu')
+   await expect(nameOfUser).toContainText(" Babu Kavuru ");
+})
+>>>>>>> 05984c25d35f3872bde32682be39bbca13c8d0ab
 
 
 await expect(nameOfUser).containsText('Welcome pavanol');
