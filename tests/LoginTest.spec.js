@@ -19,7 +19,7 @@ await page.click('//*[@id="navbarSupportedContent"]/ul/li[4]/a');
    await page.locator('#password').fill("Passw0rd100#@");
    await page.click("//input[@value='Login']");
    await page.waitForTimeout(3000);
-
+//Login successfull and verify the name of user is displayed on the page.
    const nameOfUser=await page.locator('#menu')
    await expect(nameOfUser).toContainText(" Babu Kavuru ");
 })
