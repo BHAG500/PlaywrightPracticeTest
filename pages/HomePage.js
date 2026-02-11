@@ -21,11 +21,14 @@ async addProductToCart(productName){
             await dialog.accept();
 
  } })
- await this.page.locator(this.addToCartbtn).click():
+ await this.page.locator(this.addToCartbtn).click();
     }
-}
-async gotoCart(){
-    await this.page.locator(this.cart).clik();
+
+async gotoCart() {
+    await this.page.locator(this.cart).click();
 
 }
+
+
+
 
