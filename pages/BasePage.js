@@ -1,14 +1,9 @@
-import {Page, Locator, expect} from '@playwright/test';
-
-class BasePage {
-  //protected page: Page;
-
+export class BasePage {
   constructor(page) {
     this.page = page;
   }
-}
-module.exports = BasePage;
-navigateTo(url) {
-return this.page.goto(url);
 
+  async navigateTo(url) {
+    await this.page.goto(url);
+  }
 }
