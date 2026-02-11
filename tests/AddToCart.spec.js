@@ -1,5 +1,6 @@
 import{test, expect} from '@playwright/test';
 import config from '../config.json';
+import{LoginPage} from '../pages/LoginPage';
 //Test case : Add to cart
 test.describe('Add to cart flow', () =>{
   test('Should add item to cart and verify', async({page})=>{
